@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comidas Argentinas</title> 
-    <link rel="stylesheet" href="style.css"> 
+    <title>Comidas Argentinas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-      <!-- Para filtros y navegacion -->
+        <!-- Para filtros y navegacion -->
     </header>
 
     <main class="comida-container" id="comidaContainer">
         <!-- Contenido Dinamico -->
-    </main>     
+    </main>
 
- <!-- Parte que hice sin ayuda -->
-
-
-
-    <!-- Parte que hice con ivo -->
     <section class="addFood">
-<form id="agregarComida">
-  <h2>Agregar comida</h2>
-<label>Nombre de la comida</label>
-  <input type="text" name= "nombre" placeholder="Nombre de la comida" required>
+        <form id="addFoodForm">
 
-  <label for="">Nombre de la categorira</label>
-  <input type="text" name = "categoria" placeholder="Nombre de la categorira" required>
-  
-  <label>Nombre de la Provincia</label>
-  <input type="text" name = "provincia" placeholder="Nombre de la provincia" required>
+            <h2>Agregar Comida</h2>
 
-  <label>Nombre de los ingredientes</label>
-  <input type="text" name = "ingredientes" placeholder="Nombre de los ingredientes" required>
-  
-  <button type="submit">AgregarComida</button>
-</form>
+            <label>Nombre de la comida</label>
+            <input type="text" name="nombre" placeholder="Nombre de la comida" required>
 
+            <label>Tipo de comida</label>
+            <input type="text" name="categoria" placeholder="Tipo de comida">
+
+            <label>Provincia de la comida</label>
+            <input type="text" name="provincia" placeholder="Provincia de la comida">
+
+            <button type="submit" id="boton-agregar">Agregar Comida</button>
+
+        </form>
     </section>
 
     <script type="module" src="./main.js"></script>
 </body>
+
 </html>
